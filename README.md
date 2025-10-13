@@ -26,7 +26,7 @@ ComfyUI 的目录结构清晰地划分了不同的功能模块，以下是主要
   - controlnet/ - ControlNet模型
   - upscale_models/ - 超分辨率模型
   - embeddings/ - 文本嵌入模型
-  - 等等...
+  - user\default/workflows/工作流目录
 
 ### 应用程序相关
 
