@@ -15,18 +15,32 @@ ComfyUI 的目录结构清晰地划分了不同的功能模块，以下是主要
 
 ### 核心目录
 
+### 核心目录
+
 - [comfy/](file:///d%3A/ComfyUI-aki-v2.0/ComfyUI/comfy) - 包含核心功能实现，如模型管理、采样器、文本编码等基础组件
 - [comfy_extras/](file:///d%3A/ComfyUI-aki-v2.0/ComfyUI/comfy_extras) - 额外的功能节点，提供更多的模型支持和特殊效果
 - [custom_nodes/](file:///d%3A/ComfyUI-aki-v2.0/ComfyUI/custom_nodes) - 自定义节点插件目录，可以扩展ComfyUI的功能
 - [models/](file:///d%3A/ComfyUI-aki-v2.0/ComfyUI/models) - 存放各种模型文件，按类型分类存储：
-  - checkpoints/ - 大型模型检查点文件
-  - loras/ - LoRA微调模型
-  - vae/ - 变分自编码器模型
-  - clip/ - CLIP文本编码器模型
-  - controlnet/ - ControlNet模型
-  - upscale_models/ - 超分辨率模型
-  - embeddings/ - 文本嵌入模型
-  - user\default/workflows/工作流目录
+  - [checkpoints/](file:///d%3A/ComfyUI-aki-v2.0/ComfyUI/models/checkpoints/) - 完整的大模型文件（如Stable Diffusion模型），这些是图像生成的核心模型
+  - [loras/](file:///d%3A/ComfyUI-aki-v2.0/ComfyUI/models/loras/) - LoRA（Low-Rank Adaptation）模型，轻量级微调模型，用于给大模型添加特定风格或概念
+  - [vae/](file:///d%3A/ComfyUI-aki-v2.0/ComfyUI/models/vae/) - 变分自编码器（Variational Autoencoder）模型，用于图像的编码和解码过程
+  - [text_encoders/](file:///d%3A/ComfyUI-aki-v2.0/ComfyUI/models/text_encoders/) 和 [clip/](file:///d%3A/ComfyUI-aki-v2.0/ComfyUI/models/clip/) - CLIP文本编码器模型，用于将文本提示转换为向量表示
+  - [controlnet/](file:///d%3A/ComfyUI-aki-v2.0/ComfyUI/models/controlnet/) - ControlNet模型，用于控制图像生成的空间结构和姿势等
+  - [clip_vision/](file:///d%3A/ComfyUI-aki-v2.0/ComfyUI/models/clip_vision/) - CLIP视觉模型，用于处理图像输入并提取视觉特征
+  - [diffusion_models/](file:///d%3A/ComfyUI-aki-v2.0/ComfyUI/models/diffusion_models/) 和 [unet/](file:///d%3A/ComfyUI-aki-v2.0/ComfyUI/models/unet/) - 扩散模型的主干网络，通常是UNet架构
+  - [upscale_models/](file:///d%3A/ComfyUI-aki-v2.0/ComfyUI/models/upscale_models/) - 超分辨率模型，用于提升图像质量并将低分辨率图像放大
+  - [embeddings/](file:///d%3A/ComfyUI-aki-v2.0/ComfyUI/models/embeddings/) - 文本嵌入模型，通常包含特殊的词汇标记或概念
+  - [configs/](file:///d%3A/ComfyUI-aki-v2.0/ComfyUI/models/configs/) - 模型配置文件，通常是YAML格式，描述模型结构和参数
+  - 其他专门用途的目录：
+    - [animatediff_models/](file:///d%3A/ComfyUI-aki-v2.0/ComfyUI/models/animatediff_models/) 和 [animatediff_motion_lora/](file:///d%3A/ComfyUI-aki-v2.0/ComfyUI/models/animatediff_motion_lora/) - 用于动画生成的模型
+    - [audio_encoders/](file:///d%3A/ComfyUI-aki-v2.0/ComfyUI/models/audio_encoders/) - 音频编码器模型
+    - [detection/](file:///d%3A/ComfyUI-aki-v2.0/ComfyUI/models/detection/) - 图像检测模型
+    - [gligen/](file:///d%3A/ComfyUI-aki-v2.0/ComfyUI/models/gligen/) - GLIGEN模型（语言引导的图像生成）
+    - [hypernetworks/](file:///d%3A/ComfyUI-aki-v2.0/ComfyUI/models/hypernetworks/) - 超网络模型
+    - [rembg/](file:///d%3A/ComfyUI-aki-v2.0/ComfyUI/models/rembg/) - 背景移除模型
+    - [sam2/](file:///d%3A/ComfyUI-aki-v2.0/ComfyUI/models/sam2/) 和 [sams/](file:///d%3A/ComfyUI-aki-v2.0/ComfyUI/models/sams/) - 分割模型（Segment Anything Models）
+    - [style_models/](file:///d%3A/ComfyUI-aki-v2.0/ComfyUI/models/style_models/) - 风格迁移模型
+    - [ultralytics/](file:///d%3A/ComfyUI-aki-v2.0/ComfyUI/models/ultralytics/) - Ultralytics YOLO系列目标检测模型
 
 ### 应用程序相关
 
