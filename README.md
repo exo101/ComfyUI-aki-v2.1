@@ -15,8 +15,6 @@ ComfyUI 的目录结构清晰地划分了不同的功能模块，以下是主要
 
 ### 核心目录
 
-### 核心目录
-
 - [comfy/](file:///d%3A/ComfyUI-aki-v2.0/ComfyUI/comfy) - 包含核心功能实现，如模型管理、采样器、文本编码等基础组件
 - [comfy_extras/](file:///d%3A/ComfyUI-aki-v2.0/ComfyUI/comfy_extras) - 额外的功能节点，提供更多的模型支持和特殊效果
 - [custom_nodes/](file:///d%3A/ComfyUI-aki-v2.0/ComfyUI/custom_nodes) - 自定义节点插件目录，可以扩展ComfyUI的功能
