@@ -1,6 +1,14 @@
 # ComfyUI 
 <img width="1917" height="1030" alt="Snipaste_2025-10-13_18-28-53" src="https://github.com/user-attachments/assets/8f182bd1-a929-49d6-92cb-9ad25e1beec3" />
 
+版本环境：
+python3.11  
+CUDA130+torch2.91
+triton-windows=3.5.1.post24
+sageattention=2.2.0
+flash_attn=2.8.3
+nunchaku=1.21
+
 
 ComfyUI 是一个强大且模块化的视觉AI引擎和应用程序，它允许用户通过基于图形/节点/流程图的界面设计和执行高级稳定扩散管线。本文档将介绍ComfyUI的目录结构和用户界面。
 
@@ -52,7 +60,7 @@ ComfyUI 的目录结构清晰地划分了不同的功能模块，以下是主要
 
 - [requirements.txt](file:///d%3A/ComfyUI-aki-v2.0/ComfyUI/requirements.txt) - Python依赖包列表
 - [README.md](file:///d%3A/ComfyUI-aki-v2.0/ComfyUI/README.md) - 项目说明文档
-- [extra_model_paths.yaml.example](file:///d%3A/ComfyUI-aki-v2.0/ComfyUI/extra_model_paths.yaml.example) - 模型路径配置示例文件
+- [extra_model_paths.yaml.example](file:///d%3A/ComfyUI-aki-v2.0/ComfyUI/extra_model_paths.yaml.) - 模型路径配置示例文件
 
 ## UI界面介绍
 
@@ -99,17 +107,6 @@ ComfyUI 提供了一个直观的Web界面，用户可以通过浏览器访问。
 - Space：按住空格键并拖动鼠标可移动画布
 - Alt + +/-：放大/缩小画布
 
-## 运行ComfyUI
-
-要在本地运行ComfyUI，请按照以下步骤操作：
-
-1. 确保已安装Python 3.10或更高版本
-2. 安装依赖包：`pip install -r requirements.txt`
-3. 将模型文件放置到对应的[models/](file:///d%3A/ComfyUI-aki-v2.0/ComfyUI/models)子目录中
-4. 运行命令：`python main.py`
-5. 在浏览器中打开 `http://127.0.0.1:8188`
-
-您也可以使用Windows便携版，下载解压后直接运行即可。
 
 ## 总结
 
