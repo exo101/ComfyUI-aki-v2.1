@@ -8,6 +8,7 @@
 - sageattention=2.2.0
 - flash_attn=2.8.3
 - nunchaku=1.21
+- diffusers-0.36.0
 
 
 ComfyUI 是一个强大且模块化的视觉AI引擎和应用程序，它允许用户通过基于图形/节点/流程图的界面设计和执行高级稳定扩散管线。本文档将介绍ComfyUI的目录结构和用户界面。
