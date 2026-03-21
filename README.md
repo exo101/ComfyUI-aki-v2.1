@@ -1,13 +1,13 @@
 # ComfyUI 
 <img width="1917" height="1030" alt="Snipaste_2025-10-13_18-28-53" src="https://github.com/user-attachments/assets/8f182bd1-a929-49d6-92cb-9ad25e1beec3" />
 
-版本环境：
-python3.11  
-CUDA130+torch2.91
-triton-windows=3.5.1.post24
-sageattention=2.2.0
-flash_attn=2.8.3
-nunchaku=1.21
+## 版本环境：
+- python3.11.9  
+- CUDA130+torch2.91
+- triton-windows=3.5.1.post24
+- sageattention=2.2.0
+- flash_attn=2.8.3
+- nunchaku=1.21
 
 
 ComfyUI 是一个强大且模块化的视觉AI引擎和应用程序，它允许用户通过基于图形/节点/流程图的界面设计和执行高级稳定扩散管线。本文档将介绍ComfyUI的目录结构和用户界面。
