@@ -61,7 +61,7 @@ ComfyUI 的目录结构清晰地划分了不同的功能模块，以下是主要
 
 - [requirements.txt](file:///d%3A/ComfyUI-aki-v2.0/ComfyUI/requirements.txt) - Python依赖包列表
 - [README.md](file:///d%3A/ComfyUI-aki-v2.0/ComfyUI/README.md) - 项目说明文档
-- [extra_model_paths.yaml.example](file:///d%3A/ComfyUI-aki-v2.0/ComfyUI/extra_model_paths.yaml.) - 模型路径配置示例文件
+- [extra_model_paths.yaml.example](file:///d%3A/ComfyUI-aki-v2.0/ComfyUI/extra_model_paths) - 模型路径配置示例文件
 
 ## UI界面介绍
 
